@@ -1,0 +1,2 @@
+rootProject.name = "NewsView"
+include ':app'
