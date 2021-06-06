@@ -5,7 +5,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
@@ -19,7 +18,7 @@ class NewsListAdapter(private val listener: NewsItemClicked) : RecyclerView.Adap
             listener.onItemClicked(items[viewHolder.adapterPosition])
         }
 
-        return NewsViewHolder(view)
+        return viewHolder
     }
 
     override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {

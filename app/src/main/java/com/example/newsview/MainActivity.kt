@@ -55,9 +55,10 @@ class MainActivity : AppCompatActivity(), NewsItemClicked {
 //    }
 
     override fun onItemClicked(item: News) {
-        val builder = CustomTabsIntent.Builder()
-        val customTabsIntent: CustomTabsIntent = builder.build()
-        customTabsIntent.launchUrl(this, Uri.parse(item.url))    }
+        val builder =  CustomTabsIntent.Builder()
+        val customTabsIntent = builder.build()
+        customTabsIntent.launchUrl(this, Uri.parse(item.url))
+    }
 
 
 }
